@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Alyssa Johnson</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="menu-nav">
+        <div class="logo">Alyssa Johnson</div>
+        <div class="menu">
+            <div class="menu-icon" onclick="toggle()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggle()">About</a></li>
+                <li><a href="#experience" onclick="toggle()">Experience</a></li>
+                <li><a href="#projects" onclick="toggle()">Projects</a></li>
+                <li><a href="#contact" onclick="toggle()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/me-profile-pic.png" alt="My Profile Picture" />
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Alyssa Johnson</h1>
+            <p class="section__text__p2"></p>
+
+            <div class="btn-container">
+                <button
+                    class="btn btn-color-2"
+                    onclick="window.open('./assets/AlyssaJohnsonResume.pdf')">
+                    Download Resume
+                </button>
+
+                <button
+                    class="btn btn-color-1"
+                    onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+
+            <div id="socials-container">
+                <img
+                    src="./assets/linkedin.png"
+                    alt="My LinkedIn Profile"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/alyssa-johnson-8a5917250/'"
+                    />
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1"> ⊹₊ ☆ ...Get to know more... ⊹₊ ☆</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img
+                    src="assets/about-pic.png"
+                    alt="Profile Picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img
+                            src="assets/experience.png"
+                            alt="experience icon"
+                            class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p> <br> Well versed in Adobe After Effects and Premiere Pro</p>
+                    </div>
+                    <div class="details-container">
+                        <img
+                        src="assets/education.png"
+                        alt="education icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Georgia Institute of Technology Undergraduate Program</p>
+                        <p>Candidate for Bachelor of Science in Computational Media</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hello! Thank you for visiting my page! Although it's a work in progress,
+                        please feel free to explore my resume and LinkedIn profile.
+                        Your interest is greatly appreciated!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="arrow icon"
+            class="icon arrow"
+            onclick="location.href='./projects'"
+        />
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects!</h1>
+        <div class="experience-details-cotainer">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/project-1.png"
+                            alt="Project 1"
+                            class="project-img"
+                        >
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project 1 Placeholder</h2>
+                    <div class="button-container">
+                        <button class="btn btn-color-2 project-btn">
+                            Link 1
+                        </button>
+                        <button class="btn btn-color-2 project-btn">
+                            Link 2
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/project-2.png"
+                            alt="Project 2"
+                            class="project-img"
+                        >
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project 2 Placeholder</h2>
+                    <div class="button-container">
+                        <button class="btn btn-color-2 project-btn">
+                            Link 1
+                        </button>
+                        <button class="btn btn-color-2 project-btn">
+                            Link 2
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/project-3.png"
+                            alt="Project 3"
+                            class="project-img"
+                        >
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project 3 Placeholder</h2>
+                    <div class="button-container">
+                        <button class="btn btn-color-2 project-btn">
+                            Link 1
+                        </button>
+                        <button class="btn btn-color-2 project-btn">
+                            Link 2
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="arrow icon"
+            class="icon arrow"
+            onclick="location.href='./projects'"
+        />
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Here is how to</p>
+        <h1 class="title">Contact Me:</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img
+                    src="./assets/email.png"
+                    alt="email icon"
+                    class="icon contact-icon email-icon"
+                    />
+                    <p><a href="mailto:examplemail@gmail.com">alyssa.j2@gatech.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img
+                    src="./assets/linkedin.png"
+                    alt="LinkedIn icon"
+                    class="icon contact-icon"
+                    />
+                    <p><a href="https://www.linkedin.com/in/alyssa-johnson-8a5917250/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+
+        </nav>
+        <button
+            class="btn btn-color-1 to-top"
+            onclick="location.href='./#profile'">
+            Back to top!
+        </button>
+        <br>
+        <p>Copyright &#169; 2023 Alyssa Johnson</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
